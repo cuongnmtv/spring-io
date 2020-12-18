@@ -7,6 +7,10 @@ public class ResponeUtil {
 	private String message;
 	private Object data;
 	
+	public ResponeUtil() {
+		
+	}
+	
 	public ResponeUtil(Boolean success, Integer errorCode, String message, Object data) {
 		this.success = success;
 		this.errorCode = errorCode;

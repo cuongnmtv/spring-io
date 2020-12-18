@@ -17,4 +17,16 @@ public class HeroService {
 	public List<Hero> getHeroes() {
 		return heroRepository.findAll();
 	}
+	
+	public Hero getHero(Long id) {
+		return heroRepository.getOne(id);
+	}
+
+	public void addHero(Hero hero) {
+		heroRepository.save(hero);
+	}
+	
+	public void deleteHero(Long id) {
+		heroRepository.deleteById(id);
+	}
 }
